@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Unit 3 Project Starter Code</title>
-    </head>
+<head>
+    <title>F1 Race Strategy Game</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    
-    <body>
-        <!-- Add a title and edit the opening of your story. -->
-        <div class="title"> Put title of your story </div>
-        <div class="story-opening">
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-            <h1>Put opening message of your story</h1>
-        </div>
+    <script defer src="game.js"></script>
+</head>
 
-        <!-- Change the text of the buttons to the options relevant to your story. -->
-        <div class="buttons">
-            <button class="option-one">Option 1</button>
-            <button class="option-two">Option 2</button>
-        </div>
+<body>
 
-        <!-- Put the part of the story the user will see if they picked option one. -->
-        <div class="option-one-screen">
-            <h1>Put the second part of your story based on if they chose option 1</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-        </div>
+<div class="title">Race Day: Italian Grand Prix 🇮🇹</div>
 
-        <!-- Put the part of the story the user will see if they picked option two. -->
-        <div class="option-two-screen">
-            <h1>Put the second part of your story based on if they chose option 2 </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-        </div>
+<div class="story-opening">
+    <img src="StartingGridTop5.png">
+    <h1>
+        You are starting P4 on the grid behind Antonelli, Verstappen, and Hamilton
+        It's lights out at Monza. Fast track, a lot of places for overtaking.
+    </h1>
+</div>
 
-        <!--Put the end of the story if the user chose option 1.-->
-        <div class="option-one-end">
-            <h1>Put final part of your story based on if they chosen option 1 at the beginning </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-        </div>
+<div class="buttons">
+    <button class="option-one">Aggressive Start</button>
+    <button class="option-two">Controlled Start</button>
+</div>
 
-        <!-- Put the end of the story if the user chose option 2.-->
-        <div class="option-two-end">
-            <h1>Put final part of your story based on if they chosen option 2 at the beginning </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-        </div>
-    </body>
+option 1 
+<div class="option-one-screen">
+    <img src="turn1-aggressive.jpg">
+    <h1>
+        You dive into Turn 1 and jump to P2 behind Antonelli.
+        Verstappen and Hamilton are right behind you.
+        Lap 10: Safety Car deployed after crash between Lando Norris and George Russell.
+    </h1>
+
+    <button class="one-pit">Pit Under Safety Car</button>
+    <button class="one-stay">Stay Out</button>
+</div>
+
+<div class="option-two-screen">
+    <img src="controlled-start.jpg">
+    <h1>
+        You hold P4 and avoid early chaos.
+        Lap 10: Safety Car comes out after a crash ahead.
+        You are now P3 after pit stops shake things up.
+    </h1>
+
+    <button class="two-pit">Pit Under Safety Car</button>
+    <button class="two-stay">Stay Out</button>
+</div>
+
+
+
+
+
+<div class="p1-end">
+    <img src="MaxWin.png">
+    <h1>
+        Perfect strategy. You pit under the Safety Car, gain track position,
+        and overtake in the final stint.
+        🏆 P1 VICTORY
+    </h1>
+</div>
+
+
+<div class="p3-end">
+    <img src="podium.jpg">
+    <h1>
+        Solid race execution. You avoid risks and manage tires well.
+        You finish on the podium in P3.
+        🥉 PODIUM FINISH
+    </h1>
+</div>
+
+
+<div class="dnf-end">
+    <img src="PorrisCrash.png">
+    <h1>
+        You push too hard in Monaco traffic and hit the barrier.
+        Front suspension damage.
+        💥 DNF
+    </h1>
+</div>
+
+</body>
 </html>
+
+
